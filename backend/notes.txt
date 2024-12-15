@@ -1,0 +1,10 @@
+for mongoose:
+
+schema.methods.function(): this method works for the instances of the model/ sechma and not directly for the model:
+for when a user is created using schema.create this is an instance of the model and function can be used here
+
+on the other hand:
+schema.static.function:
+This can be used by the model itself: model.function()
+
+and not by the instances such as the individual user that we created
