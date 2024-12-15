@@ -8,3 +8,28 @@ schema.static.function:
 This can be used by the model itself: model.function()
 
 and not by the instances such as the individual user that we created
+
+Create an app where u require express and create an app then export it
+then require that app in server and listen to that server
+
+Check iof it runs fine
+
+Setup the database
+
+require the connection to the db in the app and connect to db
+
+Then focus on creating the user model :
+
+Get schema through mongoose define hash function as static
+and auth  and compare passwords as instance methods on the schema , generate teh model and then export the model
+
+Now begin creatingf routes for the user:
+
+make the register route and use express validator body middlewares to check conditions, then instead of a traditional callback u call the controller function
+
+
+The controller has the logic:
+
+forst check for errors using express validator 
+ then get the things form req.body
+ then use the model to create user but that is done inside user.service
